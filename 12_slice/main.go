@@ -61,7 +61,6 @@ func main() {
 	iniSlice := []int{1,2,3,4,5}
 
 	fmt.Println(iniArray)
-	fmt.Prin
-	tln(iniSlice)
+	fmt.Println(iniSlice)
 }
 
