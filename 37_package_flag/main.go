@@ -5,19 +5,17 @@ import (
 	"fmt"
 )
 
+
 func main() {
-	var host *string = flag.String("host", "localhost", "Put your database host")
-	var username *string = flag.String("user", "admin", "Put your database user")
-	var password *string = flag.String("password", "root", "Put your database password")
-	var port *int = flag.Int("port", 8080, "Put your database port")
+	host := flag.String("host","localhost","Put your database host")
+	username := flag.String("username","userroot","Put your database username")
+	password := flag.String("password","passwordroot","Put your database password")
+	number := flag.Int("number", 94, "using number")
 
 	flag.Parse()
 
-	fmt.Println("Host : ", *host)
-	fmt.Println("Port : ", *port)
-	fmt.Println("User : ", *username)
-	fmt.Println("Password : ", *password)
-
+	fmt.Println("Host: ", *host)
+	fmt.Println("User: ", *username)
+	fmt.Println("Password: ", *password)
+	fmt.Println("Number", *number)
 }
-
-// cara memanggil  : go run main.go -host=local -user=danil -password=root
